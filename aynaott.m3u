@@ -352,3 +352,35 @@ https://korhls.persiana.live/hls/stream.m3u8
 https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/13c04e44967d653c70eac9670b47fa5d" group-title="Documentary",Adventure Earth
 https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Star_Sports_1.png/220px-Star_Sports_1.png",STAR SPORTS 1 HD
+http://198.195.239.50:8095/StarSports1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Star_Sports_2.png/220px-Star_Sports_2.png",STAR SPORTS 2 HD
+http://198.195.239.50:8095/StarSports2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Star_Sports_Select_1.png/220px-Star_Sports_Select_1.png",STAR SPORTS SELECT 1 HD
+http://198.195.239.50:8095/StarSportsSelect1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Star_Sports_Select_2.png/220px-Star_Sports_Select_2.png",STAR SPORTS SELECT 2 HD
+http://198.195.239.50:8095/StarSportsSelect2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Star_Jalsha_logo.png/220px-Star_Jalsha_logo.png",STAR JALSHA HD
+http://198.195.239.50:8095/StarJalsha/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Zee_Bangla_logo.png/220px-Zee_Bangla_logo.png",ZEE BANGLA HD
+http://198.195.239.50:8095/ZeeBangla/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cartoon_Network_2010_logo.svg/220px-Cartoon_Network_2010_logo.svg.png",CARTOON NETWORK HD
+http://198.195.239.50:8095/CartoonNetwork/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pogo_logo_2019.svg/220px-Pogo_logo_2019.svg.png",POGO
+http://example.com/pogo.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Hungama_TV_logo.png/220px-Hungama_TV_logo.png",HUNGAMA TV
+http://example.com/hungama.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Discovery_Kids_logo.svg/220px-Discovery_Kids_logo.svg.png",DISCOVERY KIDS HD
+http://198.195.239.50:8095/DiscoveryKids/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Sony_Yay%21.png/220px-Sony_Yay%21.png",SONY YAY
+http://example.com/sonyyay.m3u8
