@@ -20,7 +20,6 @@ overflow-x:hidden;
 }
 
 header{
-
 background:linear-gradient(90deg,#ff1493,#ff69b4);
 padding:18px;
 text-align:center;
@@ -30,26 +29,22 @@ box-shadow:0 0 20px #ff1493;
 }
 
 .player-container{
-
 position:relative;
 background:black;
 }
 
 video{
-
 width:100%;
 height:240px;
 background:black;
 }
 
 .search-box{
-
 padding:14px;
 background:#0b1225;
 }
 
 .search-box input{
-
 width:100%;
 padding:16px;
 font-size:18px;
@@ -61,13 +56,11 @@ outline:none;
 }
 
 #channels{
-
 padding:12px;
-padding-bottom:100px;
+padding-bottom:120px;
 }
 
 .channel{
-
 display:flex;
 align-items:center;
 gap:16px;
@@ -82,13 +75,11 @@ font-weight:bold;
 }
 
 .channel:hover{
-
 background:#ff149320;
 transform:scale(1.02);
 }
 
 .channel img{
-
 width:60px;
 height:60px;
 border-radius:14px;
@@ -96,7 +87,6 @@ object-fit:cover;
 }
 
 .active{
-
 border:2px solid #ff1493;
 box-shadow:0 0 12px #ff1493;
 }
@@ -104,7 +94,6 @@ box-shadow:0 0 12px #ff1493;
 /* Floating Controls */
 
 .controls{
-
 position:fixed;
 bottom:12px;
 left:50%;
@@ -121,7 +110,6 @@ box-shadow:0 0 20px #ff149360;
 }
 
 .control-btn{
-
 width:48px;
 height:48px;
 border:none;
@@ -134,18 +122,26 @@ cursor:pointer;
 }
 
 .control-btn:active{
-
 transform:scale(.92);
 }
 
 .volume{
-
 width:90px;
 }
 
 .fullscreen{
-
 font-size:18px;
+}
+
+/* Visitor Counter */
+
+.counter{
+text-align:center;
+padding:12px;
+font-size:18px;
+background:#111827;
+color:white;
+font-weight:bold;
 }
 
 </style>
@@ -156,6 +152,10 @@ font-size:18px;
 <header>
 🌸 Rakib IPTV 🌸
 </header>
+
+<div class="counter">
+👀 Live IPTV Visitors
+</div>
 
 <div class="player-container">
 
@@ -174,7 +174,7 @@ onkeyup="searchChannel()">
 
 <div id="channels"></div>
 
-<!-- Floating Bottom Controls -->
+<!-- Floating Controls -->
 
 <div class="controls">
 
@@ -422,6 +422,18 @@ channelDivs[index]
 
 }
 
+</script>
+
+<!-- Visitor Counter -->
+
+<a href='https://free-hit-counters.net/'></a>
+
+<script type='text/javascript'
+src='https://www.freevisitorcounters.com/auth.php?id=848746c27168154aa74182f62b31301ce8148955'>
+</script>
+
+<script type="text/javascript"
+src="https://www.freevisitorcounters.com/en/home/counter/1559881/t/1">
 </script>
 
 </body>
