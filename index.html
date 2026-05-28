@@ -3,8 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Rakib IPTV</title>
 
@@ -41,7 +40,7 @@ border-bottom:3px solid red;
 .header h1{
 font-size:36px;
 color:#ff1a1a;
-text-shadow:0 0 10px red;
+text-shadow:0 0 12px red;
 }
 
 /* PLAYER */
@@ -70,7 +69,7 @@ left:50%;
 transform:translate(-50%,-50%);
 
 display:flex;
-gap:16px;
+gap:15px;
 
 z-index:999;
 transition:.4s;
@@ -95,7 +94,7 @@ justify-content:center;
 align-items:center;
 
 box-shadow:
-0 0 20px rgba(255,0,0,.45);
+0 0 15px rgba(255,0,0,.5);
 
 }
 
@@ -108,7 +107,7 @@ padding:14px;
 .search-box input{
 
 width:100%;
-padding:15px;
+padding:16px;
 
 font-size:20px;
 
@@ -127,12 +126,9 @@ color:white;
 .channel-grid{
 
 display:grid;
-
-grid-template-columns:
-repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
 gap:12px;
-
 padding:12px;
 
 }
@@ -194,7 +190,7 @@ box-shadow:
 
 position:fixed;
 
-bottom:90px;
+bottom:95px;
 left:15px;
 
 z-index:9999;
@@ -216,7 +212,6 @@ box-shadow:
 0 0 12px rgba(0,255,100,.45);
 
 opacity:0;
-
 transition:.4s;
 
 }
@@ -373,7 +368,7 @@ onkeyup="searchChannels()">
 
 </div>
 
-<!-- CHANNEL GRID -->
+<!-- CHANNELS -->
 
 <div class="channel-grid"
 id="channelGrid">
@@ -683,7 +678,8 @@ ref,
 set,
 get,
 onValue,
-push
+push,
+onDisconnect
 
 }
 
@@ -720,16 +716,24 @@ initializeApp(firebaseConfig);
 const db =
 getDatabase(app);
 
+/* LIVE USERS */
+
 const liveRef =
 ref(db,'liveUsers');
-
-const totalRef =
-ref(db,'totalViews');
 
 const userRef =
 push(liveRef);
 
-set(userRef,true);
+set(userRef,{
+online:true,
+time:Date.now()
+});
+
+/* AUTO REMOVE */
+
+onDisconnect(userRef).remove();
+
+/* LIVE COUNT */
 
 onValue(liveRef,(snapshot)=>{
 
@@ -743,6 +747,11 @@ document.getElementById('liveUsers')
 .innerText=count;
 
 });
+
+/* TOTAL VIEWS */
+
+const totalRef =
+ref(db,'totalViews');
 
 get(totalRef).then(snapshot=>{
 
